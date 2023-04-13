@@ -4,7 +4,6 @@ btn.addEventListener("click", function () {
   let kmNumber = document.querySelector("#journeyDistance").value;
   let age = document.querySelector("#passengerAge").value;
   let containerFinal = document.querySelector(".Final");
-
   // Multiply Km numbers * ticket price
   let kmPrice = kmNumber * 0.21;
 
@@ -22,6 +21,8 @@ btn.addEventListener("click", function () {
   } else {
     kmPrice.toFixed(2);
   }
+
+  document.getElementById("userName").innerHTML = `${passengerName}`;
 
   containerFinal.innerHTML = `${kmPrice.toFixed(2)}` + "€";
   console.log(
