@@ -9,9 +9,21 @@
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
+    <h1>Ticket price calculation</h1>
     <div class="container">
-      <img src="img/download.jpeg" alt="" />
-      <h1>Your ticket price is: <span id="price"></span> €</h1>
+      <label for="passengerName">Name and Surname</label>
+      <input type="text" id="passengerName" />
+      <label for="journeyDistance"> Km to go</label>
+      <input type="text" id="journeyDistance" />
+      <label for="passengerAge"> Age range</label>
+      <select id="passengerAge">
+        <option value="Underage">Underage</option>
+        <option value="Adult">Adult</option>
+        <option value="Over 65">Over 65</option>
+      </select>
     </div>
+    <button>Calculate</button>
+    <button type="Reset">Reset</button>
+    <div class="Final"></div>
   </body>
 </html>
