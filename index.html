@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <h1 class="text-center text-light">Ticket price calculation</h1>
+    <h1 class="text-center text-light pt-3">TICKET PRICE CALCULATION</h1>
     <div class="container d-flex bg-white justify-content-center rounded-top-1">
       <div class="row">
         <div class="name d-flex flex-column col-4">
@@ -32,7 +32,7 @@
         </div>
         <div class="years d-flex flex-column col-4 text-center">
           <label for="passengerAge" class="dataAge pt-3 pb-2"> Age range</label>
-          <select id="passengerAge">
+          <select id="passengerAge" class="btn-age">
             <option value="Underage">Underage</option>
             <option value="Adult">Adult</option>
             <option value="Over_65">Over 65</option>
@@ -45,10 +45,35 @@
     >
       <div class="row">
         <div class="col-12 pb-3">
-          <button>Calculate</button>
-          <button type="Reset">Reset</button>
-          <div class="Final"></div>
+          <button class="btn-calculate">Calculate</button>
+          <button type="Reset" class="btn-reset">Reset</button>
         </div>
+      </div>
+    </div>
+    <h1 class="text-center text-light pt-3">YOUR TRAIN TICKET</h1>
+    <div class="container bg-white">
+      <h2 class="text-light mt-4 text-dark">PASSENGER DETTAILS</h2>
+      <div class="ticket_details bg-light p-3 rounded">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Passenger Name</th>
+              <th scope="col">Offer</th>
+              <th scope="col">Wagon</th>
+              <th scope="col">Code CP</th>
+              <th scope="col">Ticket price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span id="name_pass"></span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><div class="Final"></div></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 

@@ -1,13 +1,30 @@
+/* GENERAL */
+
 body {
     background-color: #B91450;
 }
+
+/* CONTAINER */
 
 .nameData, .kmData, .dataAge, button {
     color: #B91450;
 }
 
+/* BUTTON */
+
 button {
-    border-color: #B91450;
     border-radius: 5px;
     background-color: lightgrey;
+}
+
+.btn-age {
+    height: 40%;
+}
+
+.btn-calculate {
+    border-color: #EEAB6E;
+}
+
+.btn-reset {
+    border-color: grey;
 }
