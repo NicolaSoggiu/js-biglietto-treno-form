@@ -1,0 +1,13 @@
+body {
+    background-color: #B91450;
+}
+
+.nameData, .kmData, .dataAge, button {
+    color: #B91450;
+}
+
+button {
+    border-color: #B91450;
+    border-radius: 5px;
+    background-color: lightgrey;
+}
