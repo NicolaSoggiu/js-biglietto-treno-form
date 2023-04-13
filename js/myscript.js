@@ -1,7 +1,7 @@
 const passengerName = document.querySelector("#passengerName");
 let kmNumber = document.querySelector("#journeyDistance");
 let age = document.querySelector("#passengerAge");
-let containerFinal = document.querySelector(".final");
+let containerFinal = document.querySelector(".Final");
 
 // Multiply Km numbers * ticket price
 let kmPrice = kmNumber * 0.21;
@@ -24,7 +24,7 @@ if (age < 18) {
 
 const btn = document.querySelector("button");
 btn.addEventListener("click", function () {
-  containerFinal.innerHTML = `${kmPrice.value}`;
+  containerFinal.innerHTML = `${kmPrice}`;
   console.log(
     "Passenger name: " +
       passengerName.value +
