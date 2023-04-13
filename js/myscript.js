@@ -7,7 +7,6 @@ btn.addEventListener("click", function () {
 
   // Multiply Km numbers * ticket price
   let kmPrice = kmNumber * 0.21;
-  console.log("Your ticket price is:" + " " + kmPrice.toFixed(2) + "€");
 
   // Minor age discount
   let minorDiscount = (kmPrice * 20) / 100;
@@ -16,15 +15,15 @@ btn.addEventListener("click", function () {
   let overDiscount = (kmPrice * 40) / 100;
 
   // Discount application
-  if (age < 18) {
+  if (age == "Underage") {
     kmPrice = kmPrice - minorDiscount.toFixed(2);
-  } else if (age > 65) {
+  } else if (age == "Over_65") {
     kmPrice = kmPrice - overDiscount.toFixed(2);
   } else {
     kmPrice.toFixed(2);
   }
 
-  containerFinal.innerHTML = `${kmPrice}`;
+  containerFinal.innerHTML = `${kmPrice.toFixed(2)}` + "€";
   console.log(
     "Passenger name: " +
       passengerName.value +
