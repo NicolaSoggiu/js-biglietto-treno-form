@@ -1,4 +1,5 @@
-const btn = document.querySelector("button");
+const btn = document.querySelector(".btn-calculate");
+const btnReset = document.querySelector(".btn-reset");
 btn.addEventListener("click", function () {
   const passengerName = document.querySelector("#passengerName").value;
   let kmNumber = document.querySelector("#journeyDistance").value;
@@ -33,4 +34,9 @@ btn.addEventListener("click", function () {
       ", Passenger age: " +
       passengerAge.value
   );
+});
+
+btnReset.addEventListener("click", function () {
+  journeyDistance.value = "";
+  passengerName.value = "";
 });
