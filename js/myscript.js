@@ -39,4 +39,5 @@ btn.addEventListener("click", function () {
 btnReset.addEventListener("click", function () {
   journeyDistance.value = "";
   passengerName.value = "";
+  passengerAge.value = "Underage";
 });
